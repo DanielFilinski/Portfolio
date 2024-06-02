@@ -65,6 +65,7 @@
     border-radius: 50px;
     grid-area: img2;
     background-image: url("../images/skills/node.jpg");
+    height: 300px;
 }
 
 #index-gallery .img3 {
@@ -233,64 +234,17 @@
 
 @media (max-width:624px) {
     #index-gallery {
-        display: flex;
-        flex-direction: column;
-        padding: 60px;
-    }
-
-    #index-gallery h1 {
-        font-size: 2.5em;
-        align-items: center;
-        text-align: center;
-    }
-
-
-    #index-gallery p {
-        align-items: center;
-        text-align: center;
-    }
-
-    #index-gallery .img1 {
-        width: 270px;
-        height: 270px;
-    }
-
-    #index-gallery .img2 {
-        width: 270px;
-        height: 270px;
-    }
-
-    #index-gallery .img3 {
-        width: 270px;
-        height: 610px;
-    }
-
-    #index-gallery .img4 {
-        width: 270px;
-        height: 270px;
-    }
-
-    #index-gallery .img5 {
-        width: 270px;
-        height: 270px;
-    }
-
-    #index-gallery .img6 {
-        width: 270px;
-        height: 270px;
-    }
-}
-
-@media (min-width:625px) and (max-width:1023px) {
-    #index-gallery {
         display: grid;
-        margin-left: 90px;
-        grid-template-areas: 'myAreah1 myAreah1'
-            'myAreaP myAreaP'
-            'myAreaimg1 myAreaimg2'
-            'myAreaimg3 myAreaimg4'
-            'myAreaimg3 myAreaimg6'
-            'myAreaimg5 myAreaimg5'
+        margin-left: 5px;
+        grid-template-areas: 'myAreah1 myAreah1 myAreah1'
+            'myAreaP myAreaP myAreaP'
+            'myAreaimg1 myAreaimg2 myAreaimg9'
+            'myAreaimg3 myAreaimg4 myAreaimg10'
+            'myAreaimg5 myAreaimg6 myAreaimg11'
+            'myAreaimg7 myAreaimg8 myAreaimg12'
+            'myAreaimg13 myAreaimg14 myAreaimg15'
+            'myAreaimg16 myAreaimg17 myAreaimg18'
+            'myAreaimg19 myAreaimg20 myAreaimg21'
         ;
         padding: 60px;
     }
@@ -311,37 +265,314 @@
 
     #index-gallery .img1 {
         grid-area: myAreaimg1;
-        width: 270px;
-        height: 270px;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
     }
 
     #index-gallery .img2 {
         grid-area: myAreaimg2;
-        width: 270px;
-        height: 270px;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
     }
 
     #index-gallery .img3 {
         grid-area: myAreaimg3;
-        width: 270px;
-        height: 610px;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
     }
 
     #index-gallery .img4 {
         grid-area: myAreaimg4;
-        width: 270px;
-        height: 300px;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
     }
 
     #index-gallery .img5 {
         grid-area: myAreaimg5;
-        width: 540px;
-        height: 270px;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
     }
 
     #index-gallery .img6 {
         grid-area: myAreaimg6;
-        width: 270px;
-        height: 300px;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img7 {
+        grid-area: myAreaimg7;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img8 {
+        grid-area: myAreaimg8;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img9 {
+        grid-area: myAreaimg9;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img10 {
+        grid-area: myAreaimg10;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img11 {
+        grid-area: myAreaimg11;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img12 {
+        grid-area: myAreaimg12;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img13 {
+        grid-area: myAreaimg13;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img14 {
+        grid-area: myAreaimg14;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img15 {
+        grid-area: myAreaimg15;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img16 {
+        grid-area: myAreaimg16;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img17 {
+        grid-area: myAreaimg17;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img18 {
+        grid-area: myAreaimg18;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img19 {
+        grid-area: myAreaimg19;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img20 {
+        grid-area: myAreaimg20;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media (min-width:625px) and (max-width:1023px) {
+    #index-gallery {
+        display: grid;
+        margin-left: 90px;
+        grid-template-areas: 'myAreah1 myAreah1 myAreah1'
+            'myAreaP myAreaP myAreaP'
+            'myAreaimg1 myAreaimg2 myAreaimg9'
+            'myAreaimg3 myAreaimg4 myAreaimg10'
+            'myAreaimg5 myAreaimg6 myAreaimg11'
+            'myAreaimg7 myAreaimg8 myAreaimg12'
+            'myAreaimg13 myAreaimg14 myAreaimg15'
+            'myAreaimg16 myAreaimg17 myAreaimg18'
+            'myAreaimg19 myAreaimg20 myAreaimg21'
+        ;
+        padding: 60px;
+    }
+
+    #index-gallery h1 {
+        grid-area: myAreah1;
+        font-size: 3em;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    #index-gallery p {
+        grid-area: myAreaP;
+        align-items: center;
+        text-align: center;
+    }
+
+    #index-gallery .img1 {
+        grid-area: myAreaimg1;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img2 {
+        grid-area: myAreaimg2;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img3 {
+        grid-area: myAreaimg3;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img4 {
+        grid-area: myAreaimg4;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img5 {
+        grid-area: myAreaimg5;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img6 {
+        grid-area: myAreaimg6;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img7 {
+        grid-area: myAreaimg7;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img8 {
+        grid-area: myAreaimg8;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img9 {
+        grid-area: myAreaimg9;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img10 {
+        grid-area: myAreaimg10;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img11 {
+        grid-area: myAreaimg11;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img12 {
+        grid-area: myAreaimg12;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img13 {
+        grid-area: myAreaimg13;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img14 {
+        grid-area: myAreaimg14;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img15 {
+        grid-area: myAreaimg15;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img16 {
+        grid-area: myAreaimg16;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img17 {
+        grid-area: myAreaimg17;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img18 {
+        grid-area: myAreaimg18;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img19 {
+        grid-area: myAreaimg19;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #index-gallery .img20 {
+        grid-area: myAreaimg20;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
     }
 }
