@@ -178,6 +178,13 @@
     height: 300px;
 }
 
+#index-gallery .img20 {
+    border-radius: 50px;
+    grid-area: img20;
+    background-image: url("../images/skills/docker.jpeg");
+    height: 300px;
+}
+
 /*Gallery image titles*/
 .gallery-img div {
     width: 100%;
@@ -197,6 +204,7 @@
 }
 
 .gallery-img div:hover {
+    border-radius: 50px;
     opacity: 0.8;
     transition: all ease-in-out 100ms;
 }
