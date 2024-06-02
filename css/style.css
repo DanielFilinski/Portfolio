@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,5ee,600,700,8ee,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 
-body
-{
+body {
     background: #1c0522;
 }
 
 /********************************************header******************************************/
-.MainHeader
-{
+.MainHeader {
     width: 100%;
     position: absolute;
     z-index: 999;
@@ -27,8 +25,7 @@ body
     padding: 20px 100px;
 }
 
-.MainHeader .logo
-{
+.MainHeader .logo {
     color: #fff;
     font-weight: 500;
     font-size: 3.5em;
@@ -37,8 +34,7 @@ body
     letter-spacing: 2px;
 }
 
-.MainHeader nav a 
-{
+.MainHeader nav a {
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
@@ -46,260 +42,241 @@ body
 }
 
 .MainHeader nav a:hover,
-.MainHeader nav a.active
-{
+.MainHeader nav a.active {
     color: #ab77ff;
 }
 
-.MainHeader .icon 
-{
+.MainHeader .icon {
     display: none;
 }
 
-section
-{
+section {
     padding: 100px 200px;
 }
 
 /********************************************main******************************************/
-.Main
-{
- position: relative;
- width: 100%;
- height: 100vh;
- display: flex;
- align-items: center;
- overflow: hidden;
- justify-content: center;
+.Main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
 }
 
-.Main::before
-{
+.Main::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background:linear-gradient(to top, #1c0522,transparent);
+    background: linear-gradient(to top, #1c0522, transparent);
     z-index: 100;
-    
+
 }
 
-.Main img
-{
-position: absolute;
-top: 0;
-Left: 0;
-width: 100%;
-height: 100%;
-object-fit:cover;
-pointer-events: none;
+.Main img {
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
-.Main img#moon
-{ 
+.Main img#moon {
     mix-blend-mode: screen;
 }
 
-.Main img#mountains_front
-{ 
-   z-index: 10;
+.Main img#mountains_front {
+    z-index: 10;
 }
 
-#main_text
-{
-  position:absolute;
-  color: #fff;
-  white-space: nowrap;
-  font-size: 1.5em;
-  z-index: 9;
-  letter-spacing: 2px;
-  text-align:center;
-  margin-top: -150px;
-  margin-left: 60px;
-  margin-bottom: 70px;
-  animation: text 1.5s 1;
+a.phone-link,
+a.email-link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
 }
 
-#Mainspan
-{
-  position:absolute;
-  color: #ab77ff;
-  white-space: nowrap;
-  font-size: 2.5em;
-  font-weight: 600;
-  z-index: 9;
-  letter-spacing: 2px;
-  text-align:center;
-  margin-top: -145px;
-  margin-left: 60px;
-  animation: fadeIn 4s 1;
+#main_text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 1.5em;
+    z-index: 9;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: -150px;
+    margin-left: 60px;
+    margin-bottom: 70px;
+    animation: text 1.5s 1;
 }
 
-@keyframes text 
-{
+#Mainspan {
+    position: absolute;
+    color: #ab77ff;
+    white-space: nowrap;
+    font-size: 2.5em;
+    font-weight: 600;
+    z-index: 9;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: -145px;
+    margin-left: 60px;
+    animation: fadeIn 4s 1;
+}
 
-    0%
-    {
+@keyframes text {
+
+    0% {
         color: #1c0522;
         margin-bottom: -30px;
     }
 
-    30%
-    {
-    letter-spacing: 25px;
-    margin-bottom: -30px;
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -30px;
     }
-    85%
-    {
+
+    85% {
         letter-spacing: 2px;
         margin-bottom: -30px;
     }
-    
+
 }
 
-@keyframes fadeIn 
-{
+@keyframes fadeIn {
 
-   0%
-    {
-       opacity: 0;
-    }
-
-   25%
-    {
+    0% {
         opacity: 0;
     }
-    40%
-    {
+
+    25% {
         opacity: 0;
     }
-    100%
-    {
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
-    
+
 }
 
-#main_btn
-{
- text-decoration: none;
- display: inline-block;
- padding: 0.6375em 1.1875em;
- border-radius: 40px;
- background: #fff;
- color: #2b1055;
- font-size: 1em;
- font-weight: 700;
- z-index: 9;
- margin-top: -30px;
- margin-left: 60px;
- transition: 0.7s ease;
- animation: apper 4s 1;
+#main_btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.6375em 1.1875em;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1em;
+    font-weight: 700;
+    z-index: 9;
+    margin-top: -30px;
+    margin-left: 60px;
+    transition: 0.7s ease;
+    animation: apper 4s 1;
 }
 
-#main_btn:hover
-{
+#main_btn:hover {
     background-color: #ab77ff;
     transform: scale(1.1);
 }
 
-@keyframes apper 
-{
+@keyframes apper {
 
-   0%
-    {
-       opacity: 0;
-    }
-
-   25%
-    {
+    0% {
         opacity: 0;
     }
-    50%
-    {
+
+    25% {
         opacity: 0;
     }
-    100%
-    {
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
-    
+
 }
 
 
 
 /********************************************About******************************************/
-#About
-{
+#About {
     position: relative;
     padding: 100px;
     background: #1c0522;
 }
 
-#About h2
-{
-   font-size: 3.5em;
-   margin-bottom: 10px;
-   color: #fff;
-   margin-bottom: 30px;
-   text-align: center;
+#About h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-#AboutDiv
-{
+#AboutDiv {
     display: flex;
     flex-direction: row;
 }
 
 
-#About img#Me
-{
-   width: 300px;
-   border: 5px solid #ccacff;
-   border-radius: 15rem;
-   justify-self: center;
-   align-self: center;
+#About img#Me {
+    width: 300px;
+    border: 5px solid #ccacff;
+    border-radius: 15rem;
+    justify-self: center;
+    align-self: center;
 }
 
-#About p
-{
-   font-size: 1em;
-   color: #fff;
-   display: inline-block;
-   text-align: left;
-   justify-content: center;
-   align-self: center;
-   margin-left: 50px;
+#About p {
+    font-size: 1em;
+    color: #fff;
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    align-self: center;
+    margin-left: 50px;
 }
 
 
 /********************************************Projects******************************************/
-#Projects
-{
+#Projects {
     padding: 100px;
     background: #1c0522;
 }
 
-#Projects h2
-{
-   font-size: 3.5em;
-   margin-bottom: 10px; 
-   color: #fff;
-   margin-bottom: 30px;
-   text-align: center;
+#Projects h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.ProjectsDiv
-{
+.ProjectsDiv {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.ProjectsCard
-{
+.ProjectsMainText {
+    margin-bottom: 10px;
+}
+
+.ProjectsCard {
     background-color: #ccacff;
     border: 1px solid #ccacff;
     min-height: 14em;
@@ -310,35 +287,28 @@ pointer-events: none;
     transition: 0.7s ease;
 }
 
-.ProjectsCard:hover 
-{
+.ProjectsCard:hover {
     transform: scale(1.1);
 }
 
-.ProjectsCard:hover .ProjectImg
-{
-   opacity: 0.9;
+.ProjectsCard:hover .ProjectImg {
+    opacity: 0.9;
 }
 
-.ProjectImg img
-
-{
+.ProjectImg img {
     width: 100%;
 }
 
-.ProjectInfo
-{
+.ProjectInfo {
     padding: 1em;
 }
 
-.ProjectCategory
-{
+.ProjectCategory {
     font-size: 0.8em;
     color: #1c0522;
 }
 
-.ProjectTitle
-{
+.ProjectTitle {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -346,45 +316,39 @@ pointer-events: none;
     margin-top: 10px;
 }
 
-.MoreDetails
-{
+.MoreDetails {
     text-decoration: none;
     color: #1c0522;
 }
 
-.MoreDetails:hover
-{
- color: #57368b;   
+.MoreDetails:hover {
+    color: #57368b;
 }
 
 
 
 /********************************************Contant******************************************/
-#Contact
-{
+#Contact {
     padding: 100px;
     background: #1c0522;
 }
 
-#Contact h2
-{
-   font-size: 3.5em;
-   margin-bottom: 10px; 
-   color: #fff;
-   margin-bottom: 30px;
-   text-align: center;
+#Contact h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.ContactDiv
-{
+.ContactDiv {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.ContantCard
-{
+.ContantCard {
     background-color: #ccacff;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(232, 175, 255, 0.15);
@@ -394,37 +358,31 @@ pointer-events: none;
     transition: 0.7s ease;
 }
 
-.ContantCard:hover 
-{
+.ContantCard:hover {
     transform: scale(1.1);
 }
 
-.icon
-{
+.icon {
     color: #1c0522;
     font-size: 6em;
     text-align: center;
 
 }
 
-.ContantInfo
-{
-  text-align: center;
+.ContantInfo {
+    text-align: center;
 }
 
-.ContantInfo h3
-{
+.ContantInfo h3 {
     font-size: 1.8em;
 }
 
-.ContantInfo p
-{
+.ContantInfo p {
     font-size: 1em;
 }
 
 /********************************************Footer******************************************/
-.footer
-{
+.footer {
     background-color: #0f0014;
     color: #ccacff;
     padding: 2em;
@@ -432,32 +390,27 @@ pointer-events: none;
     justify-content: space-between;
 }
 
-.footer-title
-{
+.footer-title {
     font-size: 1.3em;
     font-weight: 600;
 }
 
-.footer-title span
-{
+.footer-title span {
     color: #57368b;
 }
 
-.social-icons
-{
+.social-icons {
     font-size: 1.7em;
     padding: 0 20px 0 0;
-   
+
 }
 
-.social-icons a
-{
+.social-icons a {
     padding-right: 10px;
     color: #ccacff;
 }
 
-.social-icons a:hover
-{
+.social-icons a:hover {
     color: #ab77ff;
 }
 
@@ -465,156 +418,129 @@ pointer-events: none;
 
 
 /********************************************media******************************************/
-@media (max-width:625px)
-{
+@media (max-width:625px) {
 
-    .MainHeader
-    {
+    .MainHeader {
         padding: 12px 20px;
     }
-    
-    .MainHeader .logo
-    {
+
+    .MainHeader .logo {
         font-weight: 100;
         font-size: 2.2em;
         letter-spacing: 2px;
         padding-right: 50px;
     }
-    
-    .MainHeader nav a 
-    {
+
+    .MainHeader nav a {
         padding-left: 130px;
     }
-    
-    section
-    {
+
+    section {
         padding: 80px 20px;
     }
 
-    #main_text
-    {
-      font-size: 1em;
-      margin-left: 35px;
-    }
-    
-    #Mainspan
-    {
-      font-size: 1.5em;
-      margin-left: 30px;
+    #main_text {
+        font-size: 1em;
+        margin-left: 35px;
     }
 
-    #main_btn
-    {
-     padding: 0.6375em 1.1875em;
-     font-size: 0.8em;
-     margin-left: 35px;
+    #Mainspan {
+        font-size: 1.5em;
+        margin-left: 30px;
     }
 
-    #About h2
-    {
-       font-size: 2.5em;
-       text-align: center;
+    #main_btn {
+        padding: 0.6375em 1.1875em;
+        font-size: 0.8em;
+        margin-left: 35px;
     }
 
-    #AboutDiv
-    {
+    #About h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    #AboutDiv {
         flex-direction: column;
         align-items: center;
     }
 
-    #About img#Me
-    {
-       width: 200px;
-       margin-bottom: 20px;
-    }
-    
-    #About p
-    {
-       font-size: 1em;
-       text-align: center;
-       margin-left: 5px;
+    #About img#Me {
+        width: 200px;
+        margin-bottom: 20px;
     }
 
-    #Projects
-    {
+    #About p {
+        font-size: 1em;
+        text-align: center;
+        margin-left: 5px;
+    }
+
+    #Projects {
         padding: 40px;
     }
-    
-    #Projects h2
-    {
-       font-size: 2.5em; 
+
+    #Projects h2 {
+        font-size: 2.5em;
     }
-    
-    .ProjectInfo
-    {
+
+    .ProjectInfo {
         padding: 0.5em;
     }
-    
-    .ProjectCategory
-    {
+
+    .ProjectCategory {
         font-size: 0.8em;
         color: #1c0522;
     }
-    
-    .ProjectTitle
-    {
+
+    .ProjectTitle {
         font-weight: 600;
     }
 
-    #Contact
-    {
+    #Contact {
         padding: 40px;
     }
-    
-    #Contact h2
-    {
-       font-size: 2.5em;
+
+    #Contact h2 {
+        font-size: 2.5em;
     }
-    
-    .ContantInfo h3
-    {
+
+    .ContantInfo h3 {
         font-size: 1.5em;
     }
-    
-    .ContantInfo p
-    {
+
+    .ContantInfo p {
         font-size: 1em;
     }
 
 }
 
-@media (min-width:625px) and (max-width:1023px)
-{
-    .MainHeader .logo
-    {
-       font-weight: 500;
-       font-size: 3.5em;
+@media (min-width:625px) and (max-width:1023px) {
+    .MainHeader .logo {
+        font-weight: 500;
+        font-size: 3.5em;
     }
-    
-    .MainHeader nav a 
-    {
+
+    .MainHeader nav a {
         padding: 3px 5px;
         font-size: 1.2em;
     }
 
-    #main_text
-    {
-      font-size: 2em;
-      margin-top: -190px;
-      margin-left: 60px;
-      margin-bottom: 70px;
-    }
-    
-    #Mainspan
-    {
-      font-size: 3em;
+    #main_text {
+        font-size: 2em;
+        margin-top: -190px;
+        margin-left: 60px;
+        margin-bottom: 70px;
     }
 
-    #main_btn
-    {
-     padding: 0.6375em 1.1875em;
-     font-size: 1.5em;
-     margin-top: -1px;
+    #Mainspan {
+        font-size: 3em;
+    }
+
+    #main_btn {
+        padding: 0.6375em 1.1875em;
+        font-size: 1.5em;
+        margin-top: -1px;
     }
 
 }
