@@ -1,11 +1,11 @@
 /* Gallery container*/
 .wrapper-gallery {
-    margin: 0;
+    /* margin: 0; */
 }
 
 #index-gallery {
     display: grid;
-    padding: 100px;
+    /* padding: 100px; */
     background: #1c0522;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -210,6 +210,16 @@
     transition: all ease-in-out 100ms;
 }
 
+.center {
+    padding: 1rem;
+    max-width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: skyblue;
+}
+
 /*Pop up window*/
 
 .img-window {
@@ -236,6 +246,7 @@
     #index-gallery {
         display: grid;
         margin-left: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'myAreah1 myAreah1 myAreah1'
             'myAreaP myAreaP myAreaP'
             'myAreaimg1 myAreaimg2 myAreaimg9'
@@ -246,7 +257,8 @@
             'myAreaimg16 myAreaimg17 myAreaimg18'
             'myAreaimg19 myAreaimg20 myAreaimg21'
         ;
-        padding: 60px;
+        /* padding: 60px; */
+        place-items: center;
     }
 
     #index-gallery h1 {
@@ -266,141 +278,141 @@
     #index-gallery .img1 {
         grid-area: myAreaimg1;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img2 {
         grid-area: myAreaimg2;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img3 {
         grid-area: myAreaimg3;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img4 {
         grid-area: myAreaimg4;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img5 {
         grid-area: myAreaimg5;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img6 {
         grid-area: myAreaimg6;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img7 {
         grid-area: myAreaimg7;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img8 {
         grid-area: myAreaimg8;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img9 {
         grid-area: myAreaimg9;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img10 {
         grid-area: myAreaimg10;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img11 {
         grid-area: myAreaimg11;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img12 {
         grid-area: myAreaimg12;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img13 {
         grid-area: myAreaimg13;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img14 {
         grid-area: myAreaimg14;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img15 {
         grid-area: myAreaimg15;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img16 {
         grid-area: myAreaimg16;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img17 {
         grid-area: myAreaimg17;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img18 {
         grid-area: myAreaimg18;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img19 {
         grid-area: myAreaimg19;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #index-gallery .img20 {
         grid-area: myAreaimg20;
         border-radius: 20px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
 }
@@ -409,6 +421,7 @@
     #index-gallery {
         display: grid;
         margin-left: 90px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'myAreah1 myAreah1 myAreah1'
             'myAreaP myAreaP myAreaP'
             'myAreaimg1 myAreaimg2 myAreaimg9'

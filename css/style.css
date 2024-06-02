@@ -11,6 +11,7 @@
 
 
 body {
+
     background: #1c0522;
 }
 
@@ -52,6 +53,14 @@ body {
 
 section {
     padding: 100px 200px;
+}
+
+section #Projects a {
+    height: 40;
+}
+
+section #Projects a img {
+    width: 40;
 }
 
 /********************************************main******************************************/
@@ -432,11 +441,20 @@ a.email-link {
     }
 
     .MainHeader nav a {
-        /* padding-left: 130px; */
+        padding-left: 130px;
     }
 
     section {
-        padding: 80px 20px;
+        padding: 0px;
+    }
+
+    /* section #index-gallery {
+        padding: 0px;
+    } */
+
+
+    #About {
+        padding: 0px 10px;
     }
 
     #main_text {
@@ -457,7 +475,7 @@ a.email-link {
 
     #About h2 {
         font-size: 2.5em;
-        text-align: center;
+        /* text-align: center; */
     }
 
     #AboutDiv {
@@ -472,7 +490,7 @@ a.email-link {
 
     #About p {
         font-size: 1em;
-        text-align: center;
+        /* text-align: center; */
         margin-left: 5px;
     }
 
@@ -521,8 +539,27 @@ a.email-link {
         font-size: 3.5em;
     }
 
+    section {
+        padding: 0px;
+    }
+
+    #About {
+        padding: 0px 10px;
+    }
+
+    #About img#Me {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #AboutDiv {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
     .MainHeader nav a {
-        padding: 3px 5px;
+        /* padding: 3px 5px; */
         font-size: 1.2em;
     }
 
