@@ -95,6 +95,19 @@ section #Projects a img {
     pointer-events: none;
 }
 
+.Main img#owl {
+    position: absolute;
+    top: 200px;
+    Left: 50%;
+    width: 220px;
+    height: 100px;
+    transform: translateX(-110px);
+    transform: scale(0.5);
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
 .Main img#moon {
     mix-blend-mode: screen;
 }
