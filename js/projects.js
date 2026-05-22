@@ -135,6 +135,7 @@ const projectsData = [
 let currentProject = null;
 let currentSectionIndex = 0;
 let currentImageIndex = 0;
+let lightboxOpen = false;
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 function getSection() {
@@ -242,6 +243,38 @@ function populateModal(project) {
   });
 }
 
+// ─── Lightbox ────────────────────────────────────────────────────────────────
+function openLightbox() {
+  const images = getSection().images;
+  const total = images.length;
+
+  document.getElementById('lightboxImg').src = images[currentImageIndex];
+  document.getElementById('lightboxCounter').textContent = total > 1 ? `${currentImageIndex + 1} / ${total}` : '';
+  document.getElementById('lightboxPrev').classList.toggle('hidden', total <= 1);
+  document.getElementById('lightboxNext').classList.toggle('hidden', total <= 1);
+
+  document.getElementById('lightbox').classList.add('active');
+  lightboxOpen = true;
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  lightboxOpen = false;
+}
+
+function lightboxNav(dir) {
+  const images = getSection().images;
+  currentImageIndex = (currentImageIndex + dir + images.length) % images.length;
+
+  document.getElementById('lightboxImg').src = images[currentImageIndex];
+  document.getElementById('lightboxCounter').textContent = `${currentImageIndex + 1} / ${images.length}`;
+
+  // keep gallery in sync
+  document.getElementById('galleryMainImg').src = images[currentImageIndex];
+  document.getElementById('galleryCounter').textContent = images.length > 1 ? `${currentImageIndex + 1} / ${images.length}` : '';
+  document.querySelectorAll('.gallery-thumb').forEach((t, i) => t.classList.toggle('active', i === currentImageIndex));
+}
+
 // ─── Open / Close ─────────────────────────────────────────────────────────────
 function openModal(projectId) {
   const project = projectsData.find(p => p.id === projectId);
@@ -281,6 +314,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === document.getElementById('projectModal')) closeModal();
   });
 
+  // Open lightbox on main image click
+  document.getElementById('galleryMainImg').addEventListener('click', () => {
+    if (currentProject) openLightbox();
+  });
+
+  // Lightbox close
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  document.getElementById('lightbox').addEventListener('click', e => {
+    if (e.target === document.getElementById('lightbox') || e.target === document.getElementById('lightboxImg')) closeLightbox();
+  });
+
+  // Lightbox arrows
+  document.getElementById('lightboxPrev').addEventListener('click', e => { e.stopPropagation(); lightboxNav(-1); });
+  document.getElementById('lightboxNext').addEventListener('click', e => { e.stopPropagation(); lightboxNav(1); });
+
   // Arrow buttons
   document.getElementById('galleryPrev').addEventListener('click', () => {
     const images = getSection().images;
@@ -295,10 +343,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Keyboard
   document.addEventListener('keydown', e => {
+    if (lightboxOpen) {
+      if (e.key === 'Escape') { closeLightbox(); return; }
+      if (e.key === 'ArrowLeft')  { lightboxNav(-1); return; }
+      if (e.key === 'ArrowRight') { lightboxNav(1);  return; }
+      return;
+    }
     if (!currentProject) return;
     if (e.key === 'Escape') { closeModal(); return; }
     const images = getSection().images;
-    if (e.key === 'ArrowLeft') { currentImageIndex = (currentImageIndex - 1 + images.length) % images.length; renderGallery(); }
+    if (e.key === 'ArrowLeft')  { currentImageIndex = (currentImageIndex - 1 + images.length) % images.length; renderGallery(); }
     if (e.key === 'ArrowRight') { currentImageIndex = (currentImageIndex + 1) % images.length; renderGallery(); }
   });
 });
