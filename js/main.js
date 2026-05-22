@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
         header.style.top = '';
     } else {
         header.classList.remove('scrolled');
-        header.style.top = value * 0.5 + 'px';
+        header.style.top = window.innerWidth > 625 ? value * 0.5 + 'px' : '0';
     }
 });
 
