@@ -65,7 +65,7 @@ const projectsData = [
     title: 'Голос надежды',
     type: 'mobile',
     typeLabel: 'Mobile App',
-    description: 'A mobile application for Android and iOS. TODO: add description.',
+    description: 'A mobile app for the Voice of Hope Christian radio station. Features live radio streaming and a full podcast library with dozens of shows — available on Android and iOS.',
     tech: ['React Native', 'Redux Toolkit', 'Android', 'iOS'],
     sections: [
       {
@@ -86,7 +86,7 @@ const projectsData = [
     title: 'Источник жизни',
     type: 'fullstack',
     typeLabel: 'Mobile + Admin Panel',
-    description: 'A full-stack application with a mobile client and web-based admin panel. TODO: add description.',
+    description: 'A Christian e-book platform with subscription access to an extensive library. The mobile app offers browsing, reading, and search across categories; the admin panel manages the catalogue and users.',
     tech: ['React Native', 'Redux Toolkit', 'Android', 'iOS'],
     sections: [
       {
@@ -114,7 +114,7 @@ const projectsData = [
     title: 'Наедине с Богом',
     type: 'mobile',
     typeLabel: 'Mobile App',
-    description: 'A mobile application for Android and iOS. TODO: add description.',
+    description: 'A daily spiritual companion app with Bible reading plans, morning devotionals, live radio, and Bible courses — all in one place for Android and iOS.',
     tech: ['React Native', 'Redux Toolkit', 'Android', 'iOS'],
     sections: [
       {
@@ -124,6 +124,105 @@ const projectsData = [
           'images/projects/naedine-s-bogom/2.png',
           'images/projects/naedine-s-bogom/3.png',
           'images/projects/naedine-s-bogom/4.png'
+        ]
+      }
+    ],
+    links: []
+  },
+  {
+    id: 'buildhubix',
+    title: 'BuildHubix',
+    type: 'fullstack',
+    typeLabel: 'Web App + Admin',
+    description: 'A construction project management SaaS powered by AI. Helps contractors keep all projects, estimates, deadlines, and finances in one place. The AI assistant proactively flags risks and automates routine tasks, saving up to 12 hours per week.',
+    tech: ['Next.js', 'React', 'Node.js', 'PostgreSQL', 'AI'],
+    sections: [
+      {
+        label: 'App',
+        images: [
+          'images/projects/buildhubix/1.png',
+          'images/projects/buildhubix/2.png',
+          'images/projects/buildhubix/3.png',
+          'images/projects/buildhubix/4.png'
+        ]
+      }
+    ],
+    links: []
+  },
+  {
+    id: 'camp-planner',
+    title: 'Camp Planner',
+    type: 'fullstack',
+    typeLabel: 'Web Platform',
+    description: 'A comprehensive web platform for managing Christian camps and retreats. Covers the full event lifecycle: participant registration and approval, multi-day schedule builder with PDF/PNG export, team assignments, inventory tracking, and budget management.',
+    tech: ['Next.js', 'React', 'Node.js', 'PostgreSQL'],
+    sections: [
+      {
+        label: 'App',
+        images: [
+          'images/projects/camp-planner/1.png',
+          'images/projects/camp-planner/2.png',
+          'images/projects/camp-planner/3.png'
+        ]
+      }
+    ],
+    links: []
+  },
+  {
+    id: 'hummii',
+    title: 'Hummii',
+    type: 'website',
+    typeLabel: 'Web Platform',
+    description: 'A home services marketplace that connects clients with verified local professionals. Users can browse dozens of service categories — from home cleaning and drywall to moving and appliance installation — post tasks, and manage bookings.',
+    tech: ['React', 'Node.js', 'PostgreSQL'],
+    sections: [
+      {
+        label: 'App',
+        images: [
+          'images/projects/hummii/1.png',
+          'images/projects/hummii/2.png',
+          'images/projects/hummii/3.png',
+          'images/projects/hummii/4.png'
+        ]
+      }
+    ],
+    links: []
+  },
+  {
+    id: 'shalom-media',
+    title: 'Shalom Media',
+    type: 'mobile',
+    typeLabel: 'Mobile App',
+    description: 'A mobile app for Shalom Media, a Messianic Christian radio station. Features live radio streaming, a full broadcast schedule, and a podcast library with multilingual content. Available on Android and iOS.',
+    tech: ['React Native', 'Redux Toolkit', 'Android', 'iOS'],
+    sections: [
+      {
+        label: 'App',
+        images: [
+          'images/projects/shalom-media/1.jpg',
+          'images/projects/shalom-media/2.jpg',
+          'images/projects/shalom-media/3.jpg',
+          'images/projects/shalom-media/4.jpg',
+          'images/projects/shalom-media/5.jpg'
+        ]
+      }
+    ],
+    links: []
+  },
+  {
+    id: 'idoorpro',
+    title: 'iDoorPro',
+    type: 'fullstack',
+    typeLabel: 'Web App + CRM',
+    description: 'A CRM web application for door installation and sales companies. Manages clients, quotes, pricing catalogue, and user roles. Features a dashboard with key business metrics — monthly offers, accepted deals, active clients, and revenue — with quick-action shortcuts.',
+    tech: ['Next.js', 'React', 'Node.js', 'PostgreSQL'],
+    sections: [
+      {
+        label: 'App',
+        images: [
+          'images/projects/idoorpro/1.png',
+          'images/projects/idoorpro/2.png',
+          'images/projects/idoorpro/3.png'
         ]
       }
     ],
