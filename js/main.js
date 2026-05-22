@@ -1,5 +1,6 @@
 const stars          = document.getElementById('stars');
 const moon           = document.getElementById('moon');
+const logo           = document.getElementById('logo');
 const mountains_behind = document.getElementById('mountains_behind');
 const main_text      = document.getElementById('main_text');
 const Mainspan       = document.getElementById('Mainspan');
@@ -14,6 +15,7 @@ window.addEventListener('scroll', () => {
 
     stars.style.transform        = `translateY(${value * 0.08}px)`;
     moon.style.top               = value * 0.8 + 'px';
+    logo.style.top               = (window.innerHeight * 0.174 + value * 0.8) + 'px';
     mountains_behind.style.top   = value * 0.4 + 'px';
 
     const heroFade = Math.max(0, 1 - value / 500);

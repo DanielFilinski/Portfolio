@@ -107,6 +107,15 @@ section #Projects a img {
     pointer-events: none;
 }
 
+.Main img#logo {
+    top: 17.4%;
+    left: 52.2%;
+    width: 200px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    z-index: 5;
+}
 
 .Main img#moon {
     mix-blend-mode: screen;
@@ -302,7 +311,7 @@ a.email-link {
     background-color: #ccacff;
     border: 1px solid #ccacff;
     min-height: 14em;
-    width: 21em;
+    width: 25em;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
@@ -318,8 +327,32 @@ a.email-link {
     opacity: 0.9;
 }
 
+.ProjectImg {
+    overflow: hidden;
+    height: 280px;
+    position: relative;
+}
+
 .ProjectImg img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Browser chrome mockup for web/desktop screenshots */
+.ProjectImg.web-preview::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 26px;
+    background-color: #1a1826;
+    background-image:
+        radial-gradient(circle at 14px 13px, #ff5f57 4px, transparent 4px),
+        radial-gradient(circle at 26px 13px, #febc2e 4px, transparent 4px),
+        radial-gradient(circle at 38px 13px, #28c840 4px, transparent 4px);
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .ProjectInfo {
