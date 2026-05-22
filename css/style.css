@@ -33,6 +33,16 @@ body {
     text-decoration: none;
     font-family: 'Cookie', cursive;
     letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.MainHeader .logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .MainHeader nav a {
@@ -435,12 +445,55 @@ a.email-link {
 }
 
 /********************************************Footer******************************************/
+.big-logo-section {
+    background: #1c0522;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 16px;
+}
+
+.big-logo-img {
+    width: 260px;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.big-logo-text {
+    color: #fff;
+    font-family: 'Cookie', cursive;
+    font-size: 5em;
+    letter-spacing: 3px;
+}
+
 .footer {
     background-color: #0f0014;
     color: #ccacff;
     padding: 2em;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-logo {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: 'Cookie', cursive;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .footer-title {
@@ -548,6 +601,11 @@ a.email-link {
         margin-left: 0;
         margin-top: 10px;
         padding: 0.7em 1.5em;
+    }
+
+    .Main img#logo {
+        width: 80px;
+        left: 54%;
     }
 
     /* Sections */
